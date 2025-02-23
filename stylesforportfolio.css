@@ -224,29 +224,7 @@
     font-size: 1.5rem;
   }
   
-  @media (max-width: 768px) {
-    .mobile-menu-btn {
-      display: block;
-    }
-    .nav-links {
-      top: 80px;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.98);
-      padding: 2rem;
-      flex-direction: column;
-      gap: 2rem;
-      transform: translateY(-100%);
-      opacity: 0;
-      transition: all 0.3s ease;
-      pointer-events: none;
-    }
-    .nav-links.active {
-      transform: translateY(0);
-      opacity: 1;
-      pointer-events: all;
-    }
-  }
+  
   
   .main-content {
     margin-top: 80px;
@@ -299,13 +277,6 @@
     animation: float 6s ease-in-out infinite;
     margin-bottom: 1rem;
   }
-  
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-  }
-  
   .profile-image:hover {
     transform: translateZ(30px) rotateY(20deg);
   }
@@ -740,10 +711,6 @@
     box-shadow: 0 8px 16px rgba(79, 70, 229, 0.3);
   }
   
-  @media (max-width: 768px) {
-    .contact-container {
-      padding: 1.5rem;
-    }
     .contact-social {
       flex-wrap: wrap;
     }
@@ -840,11 +807,7 @@
     transform: translateY(-2px);
   }
   
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+  
   
   .footer-contact-link {
     color: rgba(255, 255, 255, 0.9);
@@ -926,17 +889,6 @@
     transform: rotateX(0);
   }
   
-  @media (prefers-reduced-motion: reduce) {
-    .reveal, .slide-in-left, .slide-in-right, .scale-up, .rotate-in {
-      transition: none;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      width: 95%;
-      padding: 1rem;
-    }
     .profile-section,
     .vision-section {
       padding: 1.5rem;
@@ -1077,18 +1029,6 @@
     box-shadow: 0 8px 16px rgba(79, 70, 229, 0.3);
   }
   
-  @media (max-width: 768px) {
-    .contact-info-card {
-      padding: 2rem;
-      margin: 0 1rem;
-    }
-    .contact-header-icon {
-      font-size: 2rem;
-    }
-    .contact-header h3 {
-      font-size: 1.5rem;
-    }
-  }
   
   #contact {
     position: relative;
@@ -1176,17 +1116,7 @@
     color: var(--primary-color);
   }
   
-  @media (max-width: 768px) {
-    .qualification-item {
-      padding: 1.5rem;
-    }
-    .qualification-header h3 {
-      font-size: 1.2rem;
-    }
-    .qualification-body {
-      padding-left: 2.5rem;
-    }
-  }
+
   
   .section-title {
     font-size: 2.5rem;
