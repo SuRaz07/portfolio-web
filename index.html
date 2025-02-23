@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024">
     <!DOCTYPE html>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj Paudel - Home </title>
     <meta name="description" content="Suraj Paudel is a IT Student and AI innovator specializing in web developer in Nepal. Explore projects and expertise.">
     <meta name="keywords" content="Suraj Paudel, Cybersecurity Nepal, AI Innovator, Web Security, Ethical Hacking, IT Army Nepal, Web Development, Digital Security , Gamer, Suraj , Suraz, surazz, suraz07, surazz007, suraz07, Suraj Paudel , KIDDO , KIDDO007, KIDDDO07.">
@@ -348,25 +347,6 @@
                 header.classList.remove('scrolled');
             }
         });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            const isOpen = navLinks.classList.contains('active');
-            mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.nav-links') && !e.target.closest('.mobile-menu-btn')) {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            }
-        });
-
         // Scroll animation function
         function reveal() {
             const reveals = document.querySelectorAll('.reveal, .slide-in-left, .slide-in-right, .scale-up, .rotate-in');
